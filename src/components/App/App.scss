@@ -5,6 +5,15 @@
     .modal-header {
       border-bottom: none !important;
       padding-bottom: 0px !important;
+       .logo-box{
+        position: relative;
+        top: 5px;
+        left: 5px;
+        padding:13px;
+      }
+      .logo{
+       height: 110px;
+      }
       .rocket-name {
         font-size: 12px;
       }
