@@ -19,6 +19,7 @@ const TableComponent = ({ tableData, loading, onRowClick }) => {
           <tr>
             <th>No:</th>
             <th>Launched (UTC)</th>
+            <th>Location</th>
             <th>Mission</th>
             <th>Orbit</th>
             <th>Launch Status</th>
@@ -42,6 +43,7 @@ const TableComponent = ({ tableData, loading, onRowClick }) => {
                         "dd MMMM yyyy 'at' HH:mm"
                       )}
                     </td>
+                    <td>{el.launch_site.site_name}</td>
                     <td>{el.mission_name}</td>
                     <td>
                       {el.rocket.second_stage.payloads
