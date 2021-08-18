@@ -125,6 +125,9 @@ function App({ history, match }) {
 
   const modalHeader = () => (
     <div className="d-flex">
+    <div className="logo-box">
+       <img src={rowContent && rowContent.links.mission_patch_small } alt="spacex-logo" className="logo" />
+     </div>
       <div className="d-flex flex-column">
         <span className="title">{rowContent && rowContent.mission_name}</span>
         <span className="rocket-name">
